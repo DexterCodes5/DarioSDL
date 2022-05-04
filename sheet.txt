@@ -1,0 +1,30 @@
+? should use texture atlas immediately?
+the json output of TILED lists just NUMBERS.
+using ASCII should work ok as well.
+
+use spritesheetpacker 
+http://spritesheetpacker.codeplex.com/
+
+level design in ascii,
+
+the output of spritesheetpacker is:
+grass = 0 0 32 32
+trees = 33 0 32 32
+object = x y w h
+
+2014-11-01
+5:31p
+
+I ran into the problem of the rectangles below you pushing you right and left.
+
+2014-11-02
+8:25a
+
+Fixed the collision detection to use B, L, R, T tile checks (in order)
+
+	- After checking the top you also check the bottom, to ensure stability
+
+Next would be Animation.
+
+
+
